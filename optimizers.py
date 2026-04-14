@@ -1,19 +1,6 @@
 import torch
-from torch import optim
-from optim.Optimizer import (
-    _default_to_fused_or_foreach,
-    _device_dtype_check_for_fused,
-    _differentiable_doc,
-    _foreach_doc,
-    _fused_doc,
-    _maximize_doc,
-    _params_doc,
-    _to_scalar,
-    _use_grad_for_differentiable,
-    DeviceDict,
-    Optimizer,
-    ParamsT,
-)
+from torch.optim import Optimizer
+
 
 class Alg1Optim(Optimizer):
     def __init__(self,
